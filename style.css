@@ -1,0 +1,84 @@
+div {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 700px;
+    padding: 0;
+    margin: 0;
+}
+
+.container * {
+    position: absolute;
+}
+
+.holder {
+    left: 150px;
+    width: 400px;
+    height: 30px;
+    background: #36caff;
+    border-radius: 5px;
+}
+
+.cradle {
+    width: 50px;
+    height: 300px;
+    z-index: -10;
+}
+
+.cradle--left {
+    transform-origin: top center;
+    animation: move-left;
+}
+
+.cradle:first-child {
+    left: 75px;
+}
+
+.cradle:nth-child(2) {
+    left: 125px;
+}
+
+.cradle:nth-child(3) {
+    left: 175px;
+}
+
+.cradle:nth-child(4) {
+    left: 225px;
+}
+
+.cradle:nth-child(5) {
+    left: 275px;
+}
+
+.cradle__line {
+    left: 24px;
+    width: 2px;
+    height: 250px;
+    background-color: #000;
+}
+
+.cradle__ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 250px;
+    background: #8b8b8b;
+}
+
+@keyframes move-left {
+    from {
+        transform: rotate(30deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
