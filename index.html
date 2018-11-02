@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <title>My CSS Animation</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header class="header">
+        <h1 class="title">Newton's Cradle</h1>
+    </header>
+
     <main class="container">
         <div class="holder">
-            <div class="cradle cradle--left">
+            <div class="cradle">
                 <div class="cradle__line"></div>
                 <div class="cradle__ball"></div>
             </div>
@@ -30,5 +35,16 @@
             </div>
         </div>
     </main>
+
+    <div class="control">
+        <h2 class="subtitle">How many spheres do you want to lift?</h2>
+        <div class="control__button-wrapper">
+            <button class="control__button" data-num="1">1</button>
+            <button class="control__button" data-num="2">2</button>
+            <button class="control__button" data-num="3">3</button>
+            <button class="control__button" data-num="4">4</button>
+            <button class="control__button" data-num="5">5</button>
+        </div>
+    </div>
 </body>
 </html>
